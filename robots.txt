@@ -17,6 +17,7 @@ Allow: /gander/vs-btop.html
 Allow: /gander/vs-bottom.html
 Allow: /gander/htop-for-macos.html
 Allow: /gander/htop-for-freebsd.html
+Allow: /gander/json-process-list.html
 Allow: /gander/site.css
 Allow: /gander/analytics.js
 Allow: /gander/screenshot-
