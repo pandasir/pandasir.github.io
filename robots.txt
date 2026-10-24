@@ -1,0 +1,32 @@
+# gander is a GitHub Pages project site, served from the /gander/ path of this
+# host. Crawlers only read robots.txt from the host root, so the rules that
+# matter live here; the copy inside the gander repository documents the same
+# tree and is ignored by every crawler.
+#
+# The apt/dnf trees are crawled by package clients, not by people, so they are
+# kept out of the index: a search result that lands someone in dists/stable/ is
+# a dead end. The landing page and the comparison pages are explicitly allowed,
+# and the stylesheet has to be allowed too or the pages render unstyled in a
+# crawler that obeys this file.
+
+User-agent: *
+Allow: /gander/$
+Allow: /gander/index.html
+Allow: /gander/vs-htop.html
+Allow: /gander/vs-btop.html
+Allow: /gander/vs-bottom.html
+Allow: /gander/htop-for-macos.html
+Allow: /gander/htop-for-freebsd.html
+Allow: /gander/site.css
+Allow: /gander/analytics.js
+Allow: /gander/screenshot-
+Allow: /gander/demo.
+Disallow: /gander/dists/
+Disallow: /gander/pool/
+Disallow: /gander/repodata/
+Disallow: /gander/*.deb$
+Disallow: /gander/*.rpm$
+Disallow: /gander/*.gpg$
+Disallow: /gander/*.asc$
+
+Sitemap: https://pandasir.github.io/gander/sitemap.xml
